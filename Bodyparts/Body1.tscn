@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Art/Torso1.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Snap_point.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/body_builder.gd" type="Script" id=3]
+
+[node name="Body1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="SnapPoints" type="Node2D" parent="."]
+
+[node name="head" type="Position2D" parent="SnapPoints"]
+position = Vector2( 0.523228, -14.552 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Head"
+snap_to_dirrection = "Top"
+
+[node name="leg1" type="Position2D" parent="SnapPoints"]
+position = Vector2( 4.64439, -12.5261 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Right"
+
+[node name="tail" type="Position2D" parent="SnapPoints"]
+position = Vector2( 0.294161, 9.49041 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Tail"
+
+[node name="leg2" type="Position2D" parent="SnapPoints"]
+position = Vector2( 6.58193, 3.08397 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Right"
+
+[node name="leg3" type="Position2D" parent="SnapPoints"]
+position = Vector2( -5.66503, 2.93742 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Left"
+
+[node name="leg4" type="Position2D" parent="SnapPoints"]
+position = Vector2( -3.55111, -12.4444 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Left"
+
+[node name="leg5" type="Position2D" parent="SnapPoints"]
+position = Vector2( -3.602, -4.44795 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Left"
+
+[node name="leg6" type="Position2D" parent="SnapPoints"]
+position = Vector2( 4.43759, -4.31174 )
+script = ExtResource( 2 )
+__meta__ = {
+"_gizmo_extents_": 1.0
+}
+snap_to_type = "Leg"
+snap_to_dirrection = "Right"
